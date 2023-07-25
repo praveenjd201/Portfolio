@@ -1,4 +1,19 @@
-// scroll sections active links
+
+
+
+
+/* ================= toggle icon navbar=================*/
+let menuIcon = document.querySelector('#menu-icon');
+let navbar=document.querySelector('.navbar');
+menuIcon.onclick = () =>{
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('show');
+  
+};
+
+
+
+/* ================= scroll sections active links=================*/
 
 // let footer=document.querySelector('footer');
 // console.log(footer.offsetHeight);
@@ -28,10 +43,39 @@ window.addEventListener('scroll',() =>{
         document.querySelector(`header nav a[href*=${id}]`).classList.add('active');
 
       });
-    }
+    };
   });
-
+  /* ================= sticky Navbar=================*/
   let header=document.querySelector('header');
-  header.classList.toogle
+  header.classList.toggle('sticky',window.scrollY > 100);
+
+  /* ================= remove toggle class in header=================*/
+  menuIcon.classList.remove('bx-x');
+  navbar.classList.remove('show');
+  
+  
+});
+
+  /* ================= scroll reveal =================*/
+
+ScrollReveal({ 
+  // reset: true, 
+  distance :'80px',
+  duration : 2000,
+  delay:200
+});
+
+ScrollReveal().reveal('.home-content,.heading', { origin: 'top' });
+ScrollReveal().reveal('.home-image,.about-img,.services-container,.portfolio-container,.contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+  /* ================= typed js =================*/
+const typed = new Typed('.multiple-text',{
+  strings:['Frontend Developer','YouTuber','Bloger'],
+  typeSpeed:100,
+  backSpeed:100,
+  backDelay:1000,
+  loop:true
   
 });
