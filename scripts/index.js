@@ -4,11 +4,11 @@
 
 /* ================= toggle icon navbar=================*/
 let menuIcon = document.querySelector('#menu-icon');
-let navbar=document.querySelector('.navbar');
+let navbar=document.querySelector('.nav-bar');
+
 menuIcon.onclick = () =>{
   menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('show');
-  
+  navbar.classList.toggle('show');  
 };
 
 
@@ -32,9 +32,9 @@ window.addEventListener('scroll',() =>{
     let currentScroll=scrollY;
     let top=sec.offsetTop-350; // this 350 is off the heigh of section's height
     let height=sec.offsetHeight;
-    console.log(`currentscroll = ${currentScroll}`);
-    console.log(`top = ${top}`);
-    console.log(`height = ${height}`);
+    // console.log(`currentscroll = ${currentScroll}`);
+    // console.log(`top = ${top}`);
+    // console.log(`height = ${height}`);
     let id=sec.getAttribute('id');
     // console.log(id);
     if(currentScroll >= top && currentScroll < top + height){
@@ -45,6 +45,7 @@ window.addEventListener('scroll',() =>{
       });
     };
   });
+  
   /* ================= sticky Navbar=================*/
   let header=document.querySelector('header');
   header.classList.toggle('sticky',window.scrollY > 100);
@@ -66,16 +67,49 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content,.heading', { origin: 'top' });
-ScrollReveal().reveal('.home-image,.about-img,.services-container,.portfolio-container,.contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+ScrollReveal().reveal('.home-image,.about-img,.services-container,.skills-container,.portfolio-container,.rightArea,.contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1,.workYear', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
   /* ================= typed js =================*/
 const typed = new Typed('.multiple-text',{
-  strings:['Frontend Developer','YouTuber','Bloger'],
+  strings:['Java','HTML & CSS','Javascript','Node js','React js'],
   typeSpeed:100,
   backSpeed:100,
   backDelay:1000,
   loop:true
+  
+});
+
+let arrowAll = document.querySelectorAll('#arrowpart');
+
+console.log(window.outerWidth);
+if(window.outerWidth <= 768){
+  console.log(true);
+  // arrow.classList.add('bxs-up-arrow');
+  arrowAll.forEach((arrow) =>{
+    arrow.classList.add('bxs-up-arrow');
+  })
+}
+
+/* ================= toggle icon navbar=================*/
+
+
+window.addEventListener("resize", () =>{
+  
+  width = window.outerWidth;
+  console.log(width);
+  if(width <= 768){
+    console.log(true);
+    arrowAll.forEach((arrow) =>{
+      arrow.classList.add('bxs-up-arrow');
+    })
+  }
+  if(width > 768){
+    console.log(false);
+    arrowAll.forEach((arrow) =>{
+      arrow.classList.remove('bxs-up-arrow'); 
+    })
+  }
   
 });

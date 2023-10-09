@@ -7,9 +7,14 @@
     <title>Responsive personal portfolio</title>
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 
     <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+    <!--main style-->    
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
     <!-- header design -->
@@ -17,11 +22,12 @@
       
       <a href="#" class="logo">Portfolio</a>
       <i class='bx bx-menu' id="menu-icon"></i>
-      <nav class="navbar">
+      <nav class="nav-bar">
         <a href="#home" class="active">Home</a>
         <a href="#about" class="">About</a>
-        <a href="#services" class="">Services</a>
-        <a href="#portfolio" class="">Portfolio</a>
+        <!-- <a href="#services" class="">Services</a> -->
+        <a href="#skills" class="">Skills</a>
+        <a href="#education" class="">Education</a>
         <a href="#contact" class="">Contact</a>
       </nav>
     </header>
@@ -30,19 +36,20 @@
       <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Praveenkumar JD</h1>
-        <h3>And I'm a <span class="multiple-text"></span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima est saepe animi esse autem quas ea sapiente inventore perferendis aspernatur, odit aliquid quaerat accusantium nostrum dolorum nulla numquam libero!
+        <h3>And I'm  familiar with <span class="multiple-text"></span></h3>
+        
+        <p>
         </p>
         <div class="social-media">
+          <a href=""><i class='bx bxl-twitter' ></i></a>
           <a href="#"><i class='bx bxl-facebook' ></i></a>
-          <a href="#"><i class='bx bxl-instagram' ></i></a>
           <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-          <a href="#"><i class='bx bxl-linkedin' ></i></a>
+          <a href="https://www.linkedin.com/in/praveen-kumar-jd-14267919a"><i class='bx bxl-linkedin' ></i></a>
         </div>
         <a href="#" class="btn">Download CV </a>        
       </div>
       <div class="home-image">
-        <img id="profile-image" class="profile-image" src="images/duck.jfif">
+        <img id="profile-image" class="profile-image" src="images/porfolio-profile.gif">
       </div>
       
     </section>
@@ -50,22 +57,23 @@
     <!-- about section design -->
     <section class="about" id="about">
       <div  class="about-img">
-        <img src="images/duck.jfif">
+        <img src="images/porfolio-profile.gif">
       </div>
     
       <div class="about-content">
         <h2 class="heading">About <span> Me </span></h2>
-        <h3> Frontend Developer</h3>
+        <h3> Java Developer</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia quibusdam reiciendis, architecto porro provident fugiat laboriosam libero odit dolores molestiae temporibus, quaerat delectus reprehenderit et officia dolore possimus cumque.
+          Getting a challenging position and environment where I can share my knowledge. Aspiring to associate myself with any organization which offers challenging working environment integrating individual growth along with the organizations growth and make it to the best level in respective field, where I can play a constructive and effective role in growth of the organization
         </p>
+        <p>Fast learning ability to learn any software with the help of manuals very easily & very fast. Enthusiastic about learn New Technology.</p>
         <a href="#" class="btn">Read More</a>
       </div>
     </section>
 
     <!-- service section design -->
 
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
       <h2 class="heading">Our <span>Services</span></h2>
       <div class="services-container">
         <div class="service-Box">
@@ -90,11 +98,146 @@
           <a href="#" class="btn">Read More</a>
         </div>        
       </div>
+    </section> -->
+
+      <!-- skills section design -->
+
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="skills-container" >
+
+        <div class="skill-container">
+          <h1 class="skill-heading"> <span>Techinical</span> Skills</h1>
+          <div class="Techinical-bars">
+            <div class="bar"><i style="color:white" class='bx bxl-java'></i>
+              <div class="info"> 
+                <span>JAVA</span>                
+              </div> 
+              <div class="skill-description">
+                <span>Fast, Secure, Reliable Programming language</span>
+              </div>
+              <div class="progress-line java">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div style="margin-left: -3px;">
+                <i style="color:orange" class='bx bxl-html5 '></i><i style="color:skyblue" class='bx bxl-css3 '></i>
+              </div>
+              <div class="info"> 
+                <span>HTML5 / CSS3</span>   
+              </div> 
+              <div class="skill-description">
+                <span >Most Favorite One That Used In all Webpages</span>
+              </div>
+              <div class="progress-line html">
+                <span></span>
+              </div>
+            </div>
+            
+            <div class="bar"><i style="color:yellow" class='bx bxl-javascript'></i>
+              <div class="info">                 
+                <span>JAVA Script</span>                
+              </div> 
+              <div class="skill-description">
+                <span>it is amazing what you can achieve with a few lines of JavaScript code</span>
+              </div>              
+              <div class="progress-line javascript">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar"><i style="color:skyblue" class='bx bxl-react'></i>
+              <div class="info"> 
+                <span>React</span>
+              </div> 
+              <div class="skill-description">
+                <span>JavaScript library for building user interfaces based on components</span>
+              </div>
+              <div class="progress-line react">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar"><i style="color:rgb(223, 115, 27)" class='bx bxl-git'></i>
+              <div class="info"> 
+                <span>Git</span>
+              </div> 
+              <div class="skill-description">
+                <span >Reposistory Management</span>
+              </div>
+              <div class="progress-line git">
+                <span></span>
+              </div>
+            </div>
+            
+          </div>             
+        </div>
+        <div class="skill-container" id="skills">
+          <h1 class="skill-heading"> Professional Skills</h1>
+          <div class="radial-bars">  
+  
+            <div class="radial-bar">   
+              <div class="radial-bar-content">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                  <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                  <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">90%</div>
+              </div>
+              <div class="radial-bar-content">
+                <div class="text">creativity</div> 
+              </div>       
+              
+              
+            </div>
+            <div class="radial-bar"> 
+              <div class="radial-bar-content">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                  <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                  <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">70%</div>
+              </div>  
+              <div class="radial-bar-content">
+                <div class="text">Communication</div> 
+              </div>  
+            </div>
+
+            <div class="radial-bar"> 
+              <div class="radial-bar-content">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                  <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                  <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">70%</div>
+              </div> 
+              <div class="radial-bar-content">
+                <div class="text">Problem solving</div> 
+              </div>
+            </div>
+
+            <div class="radial-bar"> 
+              <div class="radial-bar-content">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                  <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                  <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">80%</div>
+              </div>
+              <div class="radial-bar-content">
+                <div class="text">Team work</div> 
+              </div>
+              
+              
+            </div>         
+          </div>       
+        </div>
+      </div>
+    
     </section>
 
     <!-- portfolio section design -->
 
-    <section class="portfolio" id="portfolio">
+    <!-- <section class="portfolio" id="portfolio">
       <h2 class="heading">Latest <span>Project</span></h2>
 
       <div class="portfolio-container">
@@ -149,40 +292,113 @@
           </div>
         </div>
       </div>
-    </section>
-      <!-- contact section design -->
-      <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
-          <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email address">
-          </div>
-          <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email subject">
-          </div>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-          <input type="submit" value="Send Message" class="btn">
-        </form>
-      </section>
-      <!-- footer design -->
+    </section> -->
 
-      <footer class="footer">
-        <div class="footer-text">
-          <p>Copyright &copy; | All Rights Reserved.</p>
+    <!-- Education -->
+    <section class="education" id="education">
+      <h2 class="heading">My Acadamic <span> Career</span></h2> 
+      <div class="edcation-container">
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+              <div class="workYear">2018-2020</div>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+              <div class="arrowpart" ><i class='bx bxs-left-arrow'  id="arrowpart" ></i></div>
+              <div class="exCon">
+                  <h4>MASTER OF COMPUTER  SCIENCE <span>(MCA)</span> </h4>
+                  <h5>Guru Nanak College</h5>
+                  <p>MASTER OF COMPUTER  SCIENCE  with <strong><span>80.0%</span> </strong>  in  GURU NANAK COLLEGE , Velachery .
+                  </p>
+                  <img src="images/clg.png" width="75" height="75">
+              </div>
+          </div>
         </div>
-        <div class="footer-iconTop">
-          <a href="#home">
-            <i class='bx bx-up-arrow-alt'></i>
-          </a>
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+              <div class="workYear">2014-2017</div>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+              <div class="arrowpart"><i class='bx bxs-left-arrow' id="arrowpart"></i></div>
+              <div class="exCon">
+                  <h4>BACHELOR OF COMPUTER SCIENCE <span>(B.sc Comp)</span> </h4>
+                  <h5>Thiruthangal Nadar College</h5>
+                  <p>MASTER OF COMPUTER  SCIENCE  with <span><strong>66.0%</strong></span> in  hiruthangal Nadar College , Selavayal .
+                  </p>
+                  <img src="images/tnc-college-1.png" width="75" height="75">
+              </div>
+          </div>
         </div>
-      </footer>
-      <!-- scroll reveal -->
-      <script src="https://unpkg.com/scrollreveal"></script>
-      <!-- typed js -->
-      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-      <!-- custom js -->
-      <script src="scripts/index.js"></script>
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+              <div class="workYear">2013-14</div>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+              <div class="arrowpart"><i class='bx bxs-left-arrow' id="arrowpart" ></i></div>
+              <div class="exCon">
+                  <h4>HIGHER SECONDARY COURSE <span>(HSC)</span> </h4>
+                  <h5>ORGN Government Boys Higher Secondary School</h5>
+                  <p>HIGHER SECONDARY COURSE (HSC) with <strong><span>70.0%</span> </strong>  in  ORGN Government Boys Higher Secondary School , Redhills.
+                  </p>
+                  <img src="images/govt-logo.png" width="75" height="75">
+              </div>
+          </div>
+        </div>
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+              <div class="workYear">2011-12</div>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+              <div class="arrowpart"><i class='bx bxs-left-arrow' id="arrowpart" ></i></div>
+              <div class="exCon">
+                <h4>SECONDARY SCHOOL LEAVING CERTIFICATE <span>(SSLC)</span> </h4>
+                <h5>ORGN Government Boys Higher Secondary School</h5>
+                <p>SECONDARY SCHOOL LEAVING CERTIFICATE (SSLC) with <strong><span>84.0%</span> </strong>  in  ORGN Government Boys Higher Secondary School , Redhills.
+                </p>
+                <img src="images/govt-logo.png" width="75" height="75">
+            </div>
+          </div>
+        </div>
+
+      </div>           
+      
+        
+      
+    
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email address">
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number">
+          <input type="text" placeholder="Email subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home">
+          <i class='bx bx-up-arrow-alt'></i>
+        </a>
+      </div>
+    </footer>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- custom js -->
+    <script src="scripts/index.js"></script>
   </body>
 </html>
