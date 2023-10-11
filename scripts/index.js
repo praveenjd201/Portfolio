@@ -90,6 +90,9 @@ if(window.outerWidth <= 768){
   arrowAll.forEach((arrow) =>{
     arrow.classList.add('bxs-up-arrow');
   })
+  ScrollReveal().reveal('.workYear', {  easing: 'ease-in',
+origin:'top',
+scale:'0.85'});
 }
 
 /* ================= toggle icon navbar=================*/
